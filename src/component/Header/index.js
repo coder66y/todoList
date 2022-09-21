@@ -7,8 +7,7 @@ export default function index(props) {
     if (e.target.value.trim() === '') {
       return message.warn('请添加非空待办项');
     }
-    addTodo(e.target.value);
-
+    addTodo(e.target.value.trim());
   }
   return (
     <div>
